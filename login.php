@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href = "css/bootstrap.min.css" rel = "stylesheet">
 <link href = "tone_login.css" rel = "stylesheet">
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -24,8 +24,6 @@ $form = <<<EOT
 <br>
 <h4>Password : </h4>
 <input type="password" class = "form-control status-box" name="password" required>
-<br>
-<a href="forgetpass.php">Forgot password?</a>
 <br>
 <br>
 <input type="submit" class = "btn btn-success" name="submit" value="Log in"><br>
