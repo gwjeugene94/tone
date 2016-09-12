@@ -1,0 +1,163 @@
+nav{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 10;
+}
+
+.navbar{
+    background-color: #D0F6F8;
+}
+
+
+.navbar-fixed-top .navbar-brand{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.navbar-fixed-top .navbar-brand:hover{
+    color: #3F23F7;
+}
+
+.navbar .navbar-nav{
+    margin-left: 100px;
+}
+
+.navbar .navbar-nav li a{
+    color: #64BDFC;
+    font-weight: bolder;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.navbar .navbar-nav li a:hover{
+    color: #3F23F7;
+}
+
+.title img{
+}
+
+.about img{
+    margin-top: -150px;
+}
+
+.advantage img{
+        margin-top: -150px;
+}
+
+.problem img{
+        margin-top: -150px;
+}
+
+.card img{
+        margin-top: -150px;
+}
+
+.table img{
+        margin-top: -150px;
+        margin-bottom: -60px;
+}
+
+.arrow {
+    z-index: 1049;
+    position: fixed;
+    left: 2%;
+    top: 0.5%;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.arrow .btn:focus {
+    outline: 0;
+}
+
+.column{
+    margin-top: -17px;
+}
+
+.modal-footer .btn-primary{
+    margin-top: 249px;
+}
+
+.form-control{
+    width: 350px;
+}
+
+@media(max-width:767px) {
+   
+nav{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 10;
+}
+
+.navbar .navbar-nav li a{
+    color: #64BDFC;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.arrow {
+    z-index: 1049;
+    position: fixed;
+    left: 2%;
+    top: 0.5%;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.arrow .btn:focus {
+    outline: 0;
+}
+
+}
+
+@media (max-width: 480px) {
+
+nav{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 10;
+}
+
+.navbar .navbar-nav li a{
+    color: #64BDFC;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.arrow {
+    z-index: 1049;
+    position: fixed;
+    left: 2%;
+    top: 0.5%;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow .btn {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.arrow .btn:focus {
+    outline: 0;
+}
+
+}
