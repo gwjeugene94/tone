@@ -26,9 +26,8 @@ nav{
 .navbar .navbar-nav li a{
     color: #64BDFC;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
-    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
 }
 
 .navbar .navbar-nav li a:hover{
@@ -103,7 +102,6 @@ nav{
     color: #64BDFC;
     font-weight: bolder;
     font-size: 15px;
-    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
 }
 
 .arrow {
@@ -125,6 +123,7 @@ nav{
 .arrow .btn:focus {
     outline: 0;
 }
+
 }
 
 @media (max-width: 480px) {
@@ -139,7 +138,6 @@ nav{
     color: #64BDFC;
     font-weight: bolder;
     font-size: 10px;
-    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
 }
 
 .arrow {

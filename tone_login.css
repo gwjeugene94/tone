@@ -1,5 +1,7 @@
-body{
-    background-color: #05E9FA;
+nav{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 10;
 }
 
 .navbar{
@@ -7,30 +9,82 @@ body{
 }
 
 
-.navbar{
+.navbar-fixed-top .navbar-brand{
     color: #fff;
     font-weight: bolder;
     font-size: 18px;
 }
 
-.navbar:hover{
+.navbar-fixed-top .navbar-brand:hover{
     color: #3F23F7;
 }
 
-.navbar li a{
+.navbar .navbar-nav{
+    margin-left: 100px;
+}
+
+.navbar .navbar-nav li a{
     color: #64BDFC;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
-    margin-right: 100%;
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
 }
 
-.navbar li a:hover{
+.navbar .navbar-nav li a:hover{
     color: #3F23F7;
 }
 
-.login{
-	margin-top: 100px;
+.title img{
+}
+
+.about img{
+    margin-top: -150px;
+}
+
+.advantage img{
+        margin-top: -150px;
+}
+
+.problem img{
+        margin-top: -150px;
+}
+
+.card img{
+        margin-top: -150px;
+}
+
+.table img{
+        margin-top: -150px;
+        margin-bottom: -60px;
+}
+
+.arrow {
+    z-index: 1049;
+    position: fixed;
+    left: 2%;
+    top: 0.5%;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.arrow .btn:focus {
+    outline: 0;
+}
+
+.column{
+    margin-top: -17px;
+}
+
+.modal-footer .btn-primary{
+    margin-top: 249px;
 }
 
 .form-control{
@@ -38,10 +92,6 @@ body{
 }
 
 @media(max-width:767px) {
-
-body{
-    background-color: #05E9FA;
-}
    
 nav{
     padding-top: 2px;
@@ -49,19 +99,35 @@ nav{
     z-index: 10;
 }
 
-.navbar li a{
+.navbar .navbar-nav li a{
     color: #64BDFC;
     font-weight: bolder;
     font-size: 15px;
-    margin-right: 100%;
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+}
+
+.arrow {
+    z-index: 1049;
+    position: fixed;
+    left: 2%;
+    top: 0.5%;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.arrow .btn:focus {
+    outline: 0;
 }
 }
 
 @media (max-width: 480px) {
-
-body{
-    background-color: #05E9FA;
-}
 
 nav{
     padding-top: 2px;
@@ -69,18 +135,30 @@ nav{
     z-index: 10;
 }
 
-.login{
-	margin-top: 150px;
-}
-
-.form-control{
-    width: 250px;
-}
-
-.navbar li a{
+.navbar .navbar-nav li a{
     color: #64BDFC;
     font-weight: bolder;
     font-size: 10px;
-    margin-right: 100%;
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+}
+
+.arrow {
+    z-index: 1049;
+    position: fixed;
+    left: 2%;
+    top: 0.5%;
+    width: 50px;
+    height: 50px;
+}
+
+.arrow .btn {
+    width: 80px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.arrow .btn:focus {
+    outline: 0;
 }
 }

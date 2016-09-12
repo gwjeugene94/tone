@@ -1,0 +1,99 @@
+body{
+    background-color: #05E9FA;
+}
+
+.navbar{
+    background-color: #D0F6F8;
+}
+
+
+.navbar-fixed-top .navbar-brand{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.navbar-fixed-top .navbar-brand:hover{
+    color: #3F23F7;
+}
+
+.navbar .navbar-nav{
+    margin-left: 100px;
+}
+
+.navbar .navbar-nav li a{
+    color: #64BDFC;
+    font-weight: bolder;
+    font-size: 20px;
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+}
+
+.navbar .navbar-nav li a:hover{
+    color: #3F23F7;
+}
+
+.login{
+	margin-top: 100px;
+}
+
+.form-control{
+    width: 350px;
+}
+
+.graph{
+    margin-bottom: 70px;
+}
+
+@media(max-width:767px) {
+
+body{
+    background-color: #05E9FA;
+}
+   
+nav{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 10;
+}
+
+.navbar .navbar-nav{
+    margin-left: 50px;
+}
+
+.navbar .navbar-nav li a{
+    color: #64BDFC;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+}
+}
+
+@media (max-width: 480px) {
+
+body{
+    background-color: #05E9FA;
+}
+
+nav{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    z-index: 10;
+}
+
+.navbar .navbar-nav li a{
+    color: #64BDFC;
+    font-weight: bolder;
+    font-size: 10px;
+    font-family: Georgia, "Times New Roman", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+}
+
+.login{
+	margin-top: 150px;
+}
+
+.form-control{
+    width: 250px;
+}
+
+}

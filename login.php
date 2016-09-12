@@ -25,6 +25,8 @@ $form = <<<EOT
 <h4>Password : </h4>
 <input type="password" class = "form-control status-box" name="password" required>
 <br>
+<a href="forgetpass.php">Forgot password?</a>
+<br>
 <br>
 <input type="submit" class = "btn btn-success" name="submit" value="Log in"><br>
 </form>
@@ -39,9 +41,12 @@ if(isset($_POST['submit'])){
 	$query = $con->query("SELECT * FROM tone WHERE username = '$username'");
 		while ($row = mysqli_fetch_assoc($query)) {
 		$user_db = $row["username"];
+		$id = $row["id"];
+            
 		}
 			if ($user_db == $username) {
 				$_SESSION['username']=$username;
+				$_SESSION['id']=$id;
 		        header("Location: chart.php"); 
 		       exit();
 			}        
