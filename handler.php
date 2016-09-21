@@ -26,10 +26,10 @@ exit();
 
 $con->query("INSERT INTO tone (username,email,password , phonenumber,refid) VALUES ('$username','$email','$password','$phonenumber','$refid')") ;
 
-$msg="Registration Successful!";
+$msg="Registration Successful! Our member will contact you by Wechat shortly!";
 $_SESSION['msg']=$msg;
 
-$redirectPage = "tone.php";
+$redirectPage = "refform.php?id=$refid";
 Header("Location:".$redirectPage);
 exit(); 
        
@@ -39,18 +39,18 @@ exit();
             if(mysqli_num_rows($sql) > 0){
 $msg="Username existed!";
        $_SESSION['msg']=$msg;         
-$redirectPage = "tone.php";
+$redirectPage = "refform.php?id=$refid";
 Header("Location:".$redirectPage);
 exit();
             }
 
 
-$con->query("INSERT INTO tone (username,email,password , phonenumber) VALUES ('$username','$email','$password','$phonenumber')") ;
+$con->query("INSERT INTO tone (username,email,password , phonenumber,refid) VALUES ('$username','$email','$password','$phonenumber','$refid')") ;
 
-$msg="Registration Successful!";
+$msg="Registration Successful! Our member will contact you by Wechat shortly!";
 $_SESSION['msg']=$msg;
 
-$redirectPage = "tone.php";
+$redirectPage = "refform.php?id=$refid";
 Header("Location:".$redirectPage);
 exit();
 

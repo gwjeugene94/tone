@@ -3,6 +3,7 @@ $refid=$_GET['id'];
 ?>
 <html>  
 <head>
+<script language=JavaScript> var message="Function Disabled!"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href = "css/bootstrap.min.css" rel = "stylesheet">
 <link href = "tone_login.css" rel = "stylesheet">
@@ -140,8 +141,8 @@ $refid=$_GET['id'];
 <div class="col-md-6 col-xs-3">
 <form  action="handler.php" method="POST">
         <?php echo'
-<input type="text" class = "form-control status-box" name="refid" value="By ID : '.$refid.'" readonly required><br><br>
-<input type="text" class = "form-control status-box" name="username" placeholder="USERNAME"  required><br><br>
+<input type="text" class = "form-control status-box" name="refid" value="'.$refid.'" readonly required><br><br>
+<input type="text" class = "form-control status-box" name="username" placeholder="WECHAT ID"  required><br><br>
 <input type="email" class = "form-control status-box" name="email" placeholder="EMAIL" required><br><br>
 <input type="password" class = "form-control status-box" name="password" placeholder="PASSWORD" required><br><br>
 <input type="text" class = "form-control status-box" name="phonenumber" placeholder="CONTACT NO." required><br><br>
@@ -161,10 +162,9 @@ if(isset($_SESSION['msg']))
     ?>
 <br>
 <br>
+
 </div>
 </div>
-
-
 </div>
 <div class="modal-footer">
 </div>
@@ -172,8 +172,6 @@ if(isset($_SESSION['msg']))
   </div>
 </div>
     </div>
-
-
  <script src="http:////ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <script src = "js/bootstrap.min.js"></script>
  <script src="tone.js"></script>
