@@ -58,7 +58,7 @@
     <section id = "title2">
 <div class = "title">
 <a name="tit"></a>
-<img src="img/1st.jpg" class="img-responsive" alt="">
+<img src="img/new_1st-02.jpg" class="img-responsive" alt="">
 </div>
 </section>
 
