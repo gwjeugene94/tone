@@ -23,8 +23,8 @@ Header("Location:".$redirectPage);
 exit();
             }
 
-
-$con->query("INSERT INTO tone (username,email,password , phonenumber,refid) VALUES ('$username','$email','$password','$phonenumber','$refid')") ;
+$cur_time = date('Y-m-d H:i:s');
+$con->query("INSERT INTO tone (username,email,password , phonenumber,refid,timerecord) VALUES ('$username','$email','$password','$phonenumber','$refid','$cur_time')") ;
 
 $msg="Registration Successful! Our member will contact you by Wechat shortly!";
 $_SESSION['msg']=$msg;
@@ -44,8 +44,8 @@ Header("Location:".$redirectPage);
 exit();
             }
 
-
-$con->query("INSERT INTO tone (username,email,password , phonenumber,refid) VALUES ('$username','$email','$password','$phonenumber','$refid')") ;
+$cur_time = date('Y-m-d H:i:s');
+$con->query("INSERT INTO tone (username,email,password , phonenumber,refid,timerecord) VALUES ('$username','$email','$password','$phonenumber','$refid','$cur_time')") ;
 
 $msg="Registration Successful! Our member will contact you by Wechat shortly!";
 $_SESSION['msg']=$msg;
