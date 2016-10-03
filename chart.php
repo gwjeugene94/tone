@@ -4,7 +4,7 @@ session_start();
   
 if(!isset($_SESSION["username"])){  
   
-    header("Location: tone.php");//redirect to login page to secure the welcome page without login access. 
+    header("Location: index.php");//redirect to login page to secure the welcome page without login access. 
 } 
 $id=$_SESSION['id'];
 
@@ -31,7 +31,7 @@ $id=$_SESSION['id'];
 <div class="wording">
     <?php
   
-echo  '<h3><a href="refform.php?id='.$id.'">Generate My Link & View My Form:'.$_SESSION['id'].'</a></h3>';
+echo  '<h4><a href="refform.php?id='.$id.'">Generate My Link & View My Form:'.$_SESSION['id'].'</a></h4>';
 ?>
 </div>
     <div class="graph">
